@@ -9,12 +9,11 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Sercco</title>
+    <title>Recuperación de Contraseña - Sercco</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.2/css/bootstrapValidator.min.css"/>
-    
+
     <!-- Custom styles for this template -->
     <link href="signin.css" rel="stylesheet">
 
@@ -31,45 +30,37 @@
 
     <div class="container">
 
-      <form id="login-form" class="form-signin form-horizontal" role="form" method="post" action="mapa.html">
-
-
+      <form id="recovery-form" class="form-signin form-horizontal" role="form" method="post" action="nueva-clave.html">
         <div class="form-group">
             <div class="col-sm-5 col-sm-offset-3">
-                <h2 class="form-signin-heading">Bienvenidos</h2>
-                <p class="help-block">Escribe tu correo y despues la contraseña.</p>
+              <h2 class="form-signin-heading">Recuperacion de Contraseña</h2>
+              <p class="help-block">Escribe tu correo para recibir tu nueva clave.</p>
             </div>
         </div>         
+
         <div class="form-group">
-          <label class="col-sm-3 control-label">Usuario</label>
+          <label class="col-sm-3 control-label">Correo Electronico</label>
             <div class="col-sm-5">
                <input id="email" name="email" type="email" class="form-control" placeholder="Correo Electronico" autofocus>
             </div>
-        </div>        
-        <div class="form-group">
-            <label class="col-sm-3 control-label">Contraseña</label>
-            <div class="col-sm-5">
-                <input id="password" name="password" type="password" class="form-control" placeholder="Escribe tu clave" name="password" />
-            </div>
-        </div>        
+        </div>         
         <div class="form-group">
             <div class="col-sm-5 col-sm-offset-3">
-                <p><a href="recuperacion.html">¿no recuerda tu contraseña?</a></p>
-            </div>
-        </div>        
-        
-        <div class="form-group">
-            <div class="col-sm-5 col-sm-offset-3">
-                <button type="submit" class="btn btn-lg btn-primary btn-block col-sm-5">Ingresar</button>
+                <button type="submit" class="btn btn-lg btn-primary btn-block col-sm-5">Recuperar</button>
             </div>
         </div>
+        <div class="form-group">
+            <div class="col-sm-5 col-sm-offset-3">
+                <p><a href="index.html">regresar para ingresar.</a></p>
+            </div>
+        </div>      
+        
         
       </form>
 
     </div> <!-- /container -->
 
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
     <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.2/js/bootstrapValidator.min.js"></script>
@@ -79,7 +70,7 @@
 
 
     $(document).ready(function() {
-        $('#login-form').bootstrapValidator({
+        $('#recovery-form').bootstrapValidator({
             feedbackIcons: {
                 valid: 'glyphicon glyphicon-ok',
                 invalid: 'glyphicon glyphicon-remove',
@@ -91,15 +82,6 @@
                         notEmpty: {
                         },
                         emailAddress: {
-                        }
-                    }
-                },
-                password: {
-                    validators: {
-                        notEmpty: {
-                        },
-                        stringLength: {
-                            min: 8
                         }
                     }
                 }
