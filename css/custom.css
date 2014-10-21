@@ -1,0 +1,47 @@
+#edo_container{
+	display: none;
+}
+#loader{
+	display: none;
+	margin: 0 auto;
+}
+#map{
+	  background: none repeat scroll 0 0 #fff;
+    border-radius: 2px;
+    box-shadow: 0 0 20px #999;
+    padding: 15px;
+    height: 400px;
+}
+#returnmap{
+	font-size: 12px;
+}
+.badge-secuestro{
+	background: #496070;
+}
+.badge-extorsion{
+	background: #74b33e;
+}
+.badge-robo{
+	background: #707070;
+}
+.badge-enfrentamiento{
+	background: #3baae1;
+}
+.badge-homicidio{
+	background: #f73939;	
+}
+.badge-delincuencia-organizada{
+	background: #d79e2b;	
+}
+.badge-delitos-sexuales{
+	background: #a05bb8;	
+}
+#delegaciones li a{
+	display: block;
+	padding: 10px;
+	font-weight: bold;
+}
+#delegaciones li a:hover{
+	background: #eeeeee;
+	border-radius: 5px;
+}
